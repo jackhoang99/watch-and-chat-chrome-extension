@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch & Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Watch & Chat</h1>
+      <div class="show-info">
+        <span id="current-show">Not watching anything</span>
+      </div>
+    </div>
+
+    <div class="chat-container">
+      <div id="messages" class="messages"></div>
+      
+      <div class="input-container">
+        <input 
+          type="text" 
+          id="message-input" 
+          placeholder="Type a message..."
+          maxlength="500"
+        >
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <div class="user-info">
+      <input 
+        type="text" 
+        id="username" 
+        placeholder="Your nickname"
+        maxlength="20"
+      >
+    </div>
+  </div>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
