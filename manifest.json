@@ -6,7 +6,15 @@
 
   "permissions": ["activeTab", "storage"],
 
-  "host_permissions": ["*://*.youtube.com/*", "*://*.netflix.com/*"],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.netflix.com/*",
+    "http://localhost:3000/*"
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; connect-src 'self' http://localhost:3000 wss://localhost:3000;"
+  },
 
   "content_scripts": [
     {
@@ -18,7 +26,7 @@
 
   "web_accessible_resources": [
     {
-      "resources": ["icons/*"],
+      "resources": ["icons/*", "socket.io-client/*"],
       "matches": ["<all_urls>"]
     }
   ],
