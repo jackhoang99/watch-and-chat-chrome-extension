@@ -88,8 +88,5 @@ npm run build
    - Zip the contents of the `dist` directory
    - Submit to the Chrome Web Store
 
-## License
-
-MIT
-
+Image: 
 <img width="1724" alt="Screenshot 2025-04-03 at 14 54 30" src="https://github.com/user-attachments/assets/210e2295-594d-4dfd-b616-1d0c40a8e983" />
